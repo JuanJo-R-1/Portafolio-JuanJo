@@ -161,7 +161,7 @@ h1:hover .title-coder {
 
 .subtitle {
     font-size: 1.2rem;
-    color: #494949;
+    color: #464545;
     max-width: 500px;
     transition: opacity 0.3s ease;
 }
@@ -471,4 +471,236 @@ form:hover,
 
 .dark-mode .subtitle {
     color: #ccc;
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 120px 2rem 2rem;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(250,249,246,0.9) 100%);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.about-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #00a8cc;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.profile-info .title {
+    font-size: 1.2rem;
+    color: #00a8cc;
+    margin-bottom: 1rem;
+}
+
+.profile-info .location {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.profile-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background: #00a8cc;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.bio-card {
+    grid-column: span 2;
+}
+
+.education-card,
+.skills-card {
+    grid-column: span 1;
+}
+
+.about-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.about-card h3 i {
+    color: #00a8cc;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.year {
+    color: #00a8cc;
+    font-weight: bold;
+    min-width: 120px;
+}
+
+.details h4 {
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.details p {
+    color: #666;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.skill-category h4 {
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    background: #f5f5f5;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: #00a8cc;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.interests-card {
+    grid-column: span 2;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.interest-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: #f5f5f5;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.interest-item:hover {
+    background: #00a8cc;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.interest-item i {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card {
+        grid-column: span 1;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .bio-card,
+    .interests-card {
+        grid-column: span 1;
+    }
+
+    .profile-social {
+        justify-content: center;
+    }
 }
