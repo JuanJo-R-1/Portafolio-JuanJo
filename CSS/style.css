@@ -104,7 +104,7 @@ nav a:hover::after {
     max-width: 900px;
     margin: 0 auto;
     width: 100%;
-    padding: 4rem 2rem;
+    padding: 6rem 5rem;
     text-align: left;
     transition: all 0.3s ease;
 }
@@ -134,7 +134,7 @@ h1 {
 
 .title-and {
     display: block;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #666;
     margin: 0.5rem 0;
     transition: transform 0.3s ease;
@@ -161,7 +161,7 @@ h1:hover .title-coder {
 
 .subtitle {
     font-size: 1.2rem;
-    color: #666;
+    color: #494949;
     max-width: 500px;
     transition: opacity 0.3s ease;
 }
@@ -179,30 +179,48 @@ h1:hover .title-coder {
 
 .skill-item {
     background: linear-gradient(180deg, #ffffff 0%, #fbfbfb 100%);
-    padding: 0.9rem 1.2rem;
+    padding: 1.2rem;
     border-radius: 10px;
-    text-align: left;
     font-size: 1rem;
     color: #222;
     box-shadow: 0 6px 18px rgba(36, 41, 46, 0.06);
     transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
     border: 1px solid rgba(34, 34, 34, 0.06);
-    min-height: 64px;
+    min-height: 80px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    gap: 12px;
 }
 
 .skill-item {
-    font-weight: 600;
+    font-weight: 1000;
     letter-spacing: -0.01em;
 }
 
 .skill-icon {
-    width: 40px;
-    height: 40px;
     object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.2s ease;
+}
+
+/* Per-logo explicit sizing to normalize perceived visual weight */
+.skill-icon.icon-html { width: 44px; height: 44px; }
+.skill-icon.icon-js { width: 42px; height: 42px; }
+.skill-icon.icon-css { width: 40px; height: 40px; }
+.skill-icon.icon-mysql { width: 40px; height: 40px; }
+.skill-icon.icon-python { width: 42px; height: 42px; }
+
+/* Hover effect for icons */
+.skill-item:hover .skill-icon {
+    transform: scale(1.1);
+}
+
+.skill-icon {
+    object-position: center;
+    width: 100px;
+    height: 100px;
+    object-fit: fill;
     display: block;
 }
 
@@ -212,11 +230,11 @@ h1:hover .title-coder {
 }
 
 /* Per-logo explicit sizing to normalize perceived visual weight */
-.skill-icon.icon-html { width:44px; height:44px; transform: none; }
-.skill-icon.icon-js { width:42px; height:42px; transform: none; }
-.skill-icon.icon-css { width:40px; height:40px; transform: none; }
-.skill-icon.icon-mysql { width:40px; height:40px; transform: none; }
-.skill-icon.icon-python { width:42px; height:42px; transform: none; }
+.skill-icon.icon-html { width:90px; height: 90px; transform: none; }
+.skill-icon.icon-js { width:220px; height:100px; transform: none; }
+.skill-icon.icon-css { width:100px; height:100px; transform: none; }
+.skill-icon.icon-mysql { width:190px; height:100px; transform: none; }
+.skill-icon.icon-python { width:175px; height:100px; transform: none; }
 
 /* Optional: keep icons muted (formal) and increase contrast on hover */
 .skill-icon { filter: grayscale(100%) contrast(0.95); transition: filter 0.18s ease, transform 0.18s ease; }
@@ -306,6 +324,118 @@ form:hover,
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+    }
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Projects Section Styles */
+.projects-section {
+    padding: 120px 2rem 2rem;
+    min-height: 100vh;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.project-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.project-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #00a8cc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #ff7e1f;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-image {
+        height: 200px;
     }
 }
 
