@@ -1,6 +1,6 @@
 # Personal Portfolio - Juan José Rivero
 
-Welcome to my personal portfolio repository! This project showcases my work as a frontend developer and includes information about my projects, skills, and background.
+Welcome to my personal portfolio repository! This project showcases my work as a fullstack developer and includes information about my projects, skills, and background.
 
 ## Project Structure
 
