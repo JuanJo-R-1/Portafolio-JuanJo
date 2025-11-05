@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio repository! This project showcases my work as a fullstack developer and includes information about my projects, skills, and background.
 
-link: https://juanjo-r-1.github.io/Portafolio-JuanJo/HTML/index.html
+link: https://juanjo-r-1.github.io/Portafolio-JuanJo/index.html
 
 ## Project Structure
 
