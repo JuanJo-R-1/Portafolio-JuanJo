@@ -9,7 +9,7 @@ Portafolio/
 ├── CSS/
 │   └── style.css          # Main stylesheet with all styles
 ├── HTML/
-│   ├── portafolio.html    # Home page with hero section
+│   ├── index.html    # Home page with hero section
 │   ├── proyectos.html     # Projects showcase page
 │   └── information.html   # About me and skills page
 ├── JavaScript/
@@ -61,7 +61,7 @@ Portafolio/
 
 ## 📱 Pages
 
-### Home (portafolio.html)
+### Home (index.html)
 - Hero section with animated title
 - Skills grid with hover effects
 - Clean and minimal design
