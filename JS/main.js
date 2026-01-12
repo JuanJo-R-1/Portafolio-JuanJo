@@ -62,7 +62,7 @@ const projectsData = [
     subtitle: "Luxury Car Dashboard",
     desc: "Interactive dashboard to manage and view details of high-end vehicles.",
     github: "https://github.com/Sev-AS/el-huesesaso-Proyecto-HTML-CSS.git",
-    images: ["/Resources/consecionario0.png", "/Resources/consecionario1.png", "/Resources/consecionario2.png"]
+    images: ["../Resources/consecionario0.png", "../Resources/consecionario1.png", "../Resources/consecionario2.png"]
   },
   {
     id: 1,
@@ -70,7 +70,7 @@ const projectsData = [
     subtitle: "Modern E-commerce",
     desc: "E-commerce platform with responsive design and advanced features including filtering, shopping cart, and product management, plus design features such as an activatable dark mode.",
     github: "https://github.com/JuanJo-R-1/Fakestore-Proyecto.git",
-    images: ["/Resources/Fakestore0.png", "/Resources/Fakestore1.png", "/Resources/Fakestore2.png", "/Resources/Fakestore3.png", "/Resources/Fakestore4.png"]
+    images: ["../Resources/Fakestore0.png", "../Resources/Fakestore1.png", "../Resources/Fakestore2.png", "../Resources/Fakestore3.png", "../Resources/Fakestore4.png"]
   }
 ];
 
