@@ -1,0 +1,108 @@
+
+<!-- Pagina que contiene la pagina principal del sitio-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan_Rivero / Home</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="/Resources/J.png" type="image/png">
+        <style>
+            body::before { content: ""; position: fixed; inset:0; background-image: url('../Resources/Fondo.jpg'); background-size: cover; background-position:center; filter: blur(6px) saturate(0.9); transform: scale(1.02); opacity:0.42; z-index:-2; }
+            body::after { content: ""; position: fixed; inset:0; background: rgba(6,10,15,0.45); z-index:-1; }
+        </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Juan_Rivero</div>
+        <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menú">
+            <span class="hamburger" aria-hidden="true"></span>
+        </button>
+        <nav id="site-nav" role="navigation">
+            <a href="/HTML/index.html">Home</a>
+            <a href="/HTML/proyectos.html">Portfolio</a>
+            <a href="/HTML/information.html">About</a>
+        </nav>
+        <div class="social-links">
+            <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/JuanJo-R-1" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link">    
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="hero-content">
+            <div class="text-content">
+                <h1>
+                    <span class="title-designer">designer</span>
+                    <span class="title-and">&</span>
+                    <span class="title-coder">&lt;coder&gt;</span>
+                </h1>
+                <p class="subtitle">A FullStack developer on progess, with the entusiasm of learning new things</p>
+                <div class="skills-grid">
+                    <div class="skill-item" style="--skill:95%" aria-label="HTML skill">
+                        <img src="../Resources/html5.png" style="--skill-hover:0.9" alt="HTML5 logo" class="skill-icon icon-html">
+                        <div class="skill-level" aria-hidden="true">
+                            <div class="skill-track"><div class="skill-fill"></div></div>
+                            <div class="skill-percent">95%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" style="--skill:80%" aria-label="JavaScript skill">
+                        <img src="../Resources/JavaScript.png" style="--skill-hover:0.9" alt="JavaScript logo" class="skill-icon icon-js">
+                        <div class="skill-level" aria-hidden="true">
+                            <div class="skill-track"><div class="skill-fill"></div></div>
+                            <div class="skill-percent">80%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" style="--skill:95%" aria-label="CSS skill">
+                        <img src="../Resources/css.png" style="--skill-hover:0.9" alt="CSS3 logo" class="skill-icon icon-css">
+                        <div class="skill-level" aria-hidden="true">
+                            <div class="skill-track"><div class="skill-fill"></div></div>
+                            <div class="skill-percent">95%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" style="--skill:70%" aria-label="MySQL skill">
+                        <img src="../Resources/mysql.png" style="--skill-hover:0.9" alt="MySQL logo" class="skill-icon icon-mysql">
+                        <div class="skill-level" aria-hidden="true">
+                            <div class="skill-track"><div class="skill-fill"></div></div>
+                            <div class="skill-percent">70%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" style="--skill:85%" aria-label="Python skill">
+                        <img src="../Resources/Python.png" style="--skill-hover:0.9" alt="Python logo" class="skill-icon icon-python">
+                        <div class="skill-level" aria-hidden="true">
+                            <div class="skill-track"><div class="skill-fill"></div></div>
+                            <div class="skill-percent">85%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" style="--skill:75%" aria-label="Java skill">
+                        <img src="../Resources/Java.png" style="--skill-hover:0.9" alt="Java logo" class="skill-icon icon-java">
+                        <div class="skill-level" aria-hidden="true">
+                            <div class="skill-track"><div class="skill-fill"></div></div>
+                            <div class="skill-percent">75%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../Javascript/main.js"></script>
+</body>
+</html>

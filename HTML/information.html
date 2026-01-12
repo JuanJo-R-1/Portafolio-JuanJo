@@ -1,20 +1,28 @@
+<!-- Pagina que contiene la informacion del desarollador-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan_Rivero / About</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" href="Resources/J.png" type="image/png">
+    <link rel="icon" href="/Resources/J.png" type="image/png">
+        <style>
+            body::before { content: ""; position: fixed; inset:0; background-image: url('../Resources/Fondo.jpg'); background-size: cover; background-position:center; filter: blur(6px) saturate(0.9); transform: scale(1.02); opacity:0.42; z-index:-2; }
+            body::after { content: ""; position: fixed; inset:0; background: rgba(6,10,15,0.45); z-index:-1; }
+        </style>
 </head>
 <body>
     <header class="navbar">
         <div class="logo">Juan_Rivero</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="proyectos.html">Portfolio</a>
-            <a href="information.html">About</a>
+        <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menú">
+            <span class="hamburger" aria-hidden="true"></span>
+        </button>
+        <nav id="site-nav" role="navigation">
+            <a href="/HTML/index.html">Home</a>
+            <a href="/HTML/proyectos.html">Portfolio</a>
+            <a href="/HTML/information.html">About</a>
         </nav>
         <div class="social-links">
             <a href="#" class="social-link">
@@ -36,13 +44,15 @@
             <h1 class="section-title">&lt;About_Me&gt;</h1>
             
             <div class="about-grid">
-                <!-- Panel Personal -->
                 <div class="about-card profile-card">
-                    <div class="profile-image">
-                        <img src="Resources/JuanJo(17).jpeg" alt="Juan Rivero">
+                    <div class="card">
+                        <div class="profile-image">
+                            <img src="/Resources/JuanJo(17).jpeg" alt="Juan Rivero" class="profile-img">
+                        </div>
+ 
                     </div>
                     <div class="profile-info">
-                        <h2>Juan José Rivero</h2>
+                        <h2>Juan José Rivero Camargo</h2>
                         <p class="title">FullStack Developer & Designer</p>
                         <p class="location"><i class="fas fa-map-marker-alt"></i> Colombia</p>
                         <div class="profile-social">
@@ -59,17 +69,15 @@
                     </div>
                 </div>
 
-                <!-- Panel Bio -->
                 <div class="about-card bio-card">
                     <h3><i class="fas fa-user"></i> Biography</h3>
                     <p>
-                        I am a passionate FullStack developer and systems engineering student with a keen eye for design 
+                        I'm a passionate FullStack developer and systems engineering student with a keen eye for design 
                         and user experience. For now my focus is on creating responsive, intuitive web applications 
                         using modern technologies and best practices
                     </p>
                 </div>
 
-                <!-- Panel Educación -->
                 <div class="about-card education-card">
                     <h3><i class="fas fa-graduation-cap"></i> Education</h3>
                     <div class="timeline">
@@ -80,10 +88,16 @@
                                 <p>Campuslands</p>
                             </div>
                         </div>
+                        <div class="timeline-item">
+                            <div class="year">2025</div>
+                            <div class="details">
+                                <h4>High-School</h4>
+                                <p>Other</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Panel Habilidades -->
                 <div class="about-card skills-card">
                     <h3><i class="fas fa-code"></i> Technical Skills</h3>
                     <div class="skills-list">
@@ -107,13 +121,19 @@
                             <div class="skill-tags">
                                 <span class="skill-tag">Github</span>
                                 <span class="skill-tag">VS Code</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Backend</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Python</span>
                                 <span class="skill-tag">MySQL</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Panel Intereses -->
                 <div class="about-card interests-card">
                     <h3><i class="fas fa-heart"></i> Interests</h3>
                     <div class="interests-grid">
@@ -139,6 +159,6 @@
         </div>
     </main>
 
-    <script src="JavaScript/main.js"></script>
+    <script src="../Javascript/main.js"></script>
 </body>
 </html>

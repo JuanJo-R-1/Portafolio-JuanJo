@@ -1,0 +1,92 @@
+<!-- Pagina que contiene los proyectos del desarollador-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan_Rivero / Projects</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="/Resources/J.png" type="image/png">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Juan_Rivero</div>
+        <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menú">
+            <span class="hamburger" aria-hidden="true"></span>
+        </button>
+        <nav id="site-nav" role="navigation">
+            <a href="/HTML/index.html">Home</a>
+            <a href="/HTML/proyectos.html">Portfolio</a>
+            <a href="/HTML/information.html">About</a>
+        </nav>
+        <div class="social-links">
+            <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/JuanJo-R-1" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link">    
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </header>
+     <main class="projects-section">
+        <div class="projects-container">
+            <h1 class="section-title">&lt;My_Projects&gt;</h1>
+    <section class="carousel-section">
+      <div class="carousel-left">
+        <div class="wrapper">
+          <div class="items">
+            <div class="item" 
+                data-index="0"
+                data-title="Concessionaire" 
+                data-subtitle="Luxury Car Dashboard"
+                data-desc="Interactive dashboard to manage and view details of high-end vehicles."
+                data-github="https://github.com/Sev-AS/el-huesesaso-Proyecto-HTML-CSS.git"
+                style="background-image: url('/Resources/consecionario0.png');">
+            </div>
+            
+            <div class="item" 
+                data-index="1"
+                data-title="Fakestore"
+                data-subtitle="Modern E-commerce"
+                data-desc="E-commerce platform with responsive design and advanced features including filtering, shopping cart, and product management, plus design features such as an activatable dark mode."
+                data-github="https://github.com/JuanJo-R-1/Fakestore-Proyecto.git"
+                style="background-image: url('/Resources/Fakestore0.png');">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-right">
+        <h2 id="info-title">Hover a project</h2>
+        <h3 id="info-subtitle"></h3>
+        <p id="info-desc">Move the cursor over a project to see its description.</p>
+        <div class="project-links" id="project-links-container">
+        </div>
+      </div>
+    </section>
+
+    <div id="imageModal" class="modal">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+          <button class="modal-prev">&lt;</button>
+          <div class="modal-image-container">
+            <img id="modalImage" src="" alt="Project image" class="modal-image">
+          </div>
+          <button class="modal-next">&gt;</button>
+        </div>
+        <div class="modal-info">
+          <h3 id="modal-title"></h3>
+          <p id="modal-subtitle"></p>
+          <p id="modal-image-counter"></p>
+        </div>
+      </div>
+    </div>
+  <script src="../Javascript/main.js" defer></script>
