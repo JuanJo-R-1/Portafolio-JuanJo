@@ -86,7 +86,7 @@ const projectsData = [
     subtitle: "E-commerce with a lot of variety",
     desc: "It has a wide variety of options, payment gateway, interactive menu, real-time order processing, along with customer notifications for shipping. This was made with other people.",
     github: "https://bomboloni-specialty-coffee-donuts.wuaze.com/catalogo?i=1",
-    images: ["../Resources/Bom.png", "../Resources/BomB.png", "../Resources/Bo", "../Resources/Bombo.png"]
+    images: ["../Resources/Bom.png", "../Resources/Bomb.png", "../Resources/Bo.png", "../Resources/Bombo.png"]
   }
 ];
 
