@@ -71,6 +71,14 @@ const projectsData = [
     desc: "E-commerce platform with responsive design and advanced features including filtering, shopping cart, and product management, plus design features such as an activatable dark mode.",
     github: "https://github.com/JuanJo-R-1/Fakestore-Proyecto.git",
     images: ["../Resources/Fakestore0.png", "../Resources/Fakestore1.png", "../Resources/Fakestore2.png", "../Resources/Fakestore3.png", "../Resources/Fakestore4.png"]
+  },
+  {
+    id: 2,
+    title: "Game-Test",
+    subtitle: "Simple Minigame entertaiment",
+    desc: "Classic minigame coleccion using a simple dark design with JavaScript logic.",
+    github: "https://github.com/JuanJo-R-1/Web-Games-Project-JR",
+    images: ["../Resources/tetris.png", "../Resources/serpiente.png", "../Resources/buscaminas.png", "../Resources/pacman.png"]
   }
 ];
 
